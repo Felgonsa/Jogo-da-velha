@@ -1,3 +1,3 @@
 Feito por Felipe gonçalves
 
-https://github.com/Felgonsa/Jogo-da-velha.git
+https://felgonsa.github.io/Jogo-da-velha/
