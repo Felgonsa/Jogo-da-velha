@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(4, 4, 80);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 55px;
+    margin-top: 90px;
+}
+
+.turn {
+    color: white;
+    font-size: 40px;
+    margin: auto;
+}
+
+.turn:after {
+    content: \1F525;
+}
+
+.stage {
+    margin-top: 30px;
+}
+
+.square {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-color: antiquewhite;
+    border: 1px solid grey;
+    margin: 1px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.square:hover {
+    width: 122px;
+    height: 122px;
+    margin: 0px;
+}
+
+@keyframes appear {
+    0% {
+        font-size: 0px;
+        /* transform: rotate(0deg) */
+    }
+    100% {
+        font-size: 70px;
+        /* transform: rotate(360deg) */
+    }
+}
+
+
+/*@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}*/
+
+.o {
+    position: relative;
+}
+
+.o:after {
+    position: absolute;
+    content: "\1F30A ";
+    font-size: 70px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    animation: appear 350ms ease-out both;
+    /* teste para o icon flutuar*/
+    /*transform: translateY(0px);
+    animation: float 2.5s ease-in-out infinite;*/
+}
+
+.x {
+    position: relative;
+}
+
+.x:after {
+    position: absolute;
+    content: "\1F525";
+    font-size: 70px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    animation: appear 350ms ease-in-out both;
+    /* teste para o icon flutuar*/
+    /* transform: translateY(0px);
+    animation: float 2.5s ease-in-out infinite;*/
+}
+
+.restart {
+    display: inline-block;
+    height: 80px;
+    width: 200px;
+    background: linear-gradient(to right, rgb(207, 14, 14), rgb(0, 71, 171));
+    padding: 8px;
+    font-size: 65px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-property: padding;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.restart:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+}
